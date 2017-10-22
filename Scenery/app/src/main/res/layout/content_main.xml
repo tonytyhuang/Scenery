@@ -8,7 +8,6 @@
     tools:context="com.forrestfan.scenery.MainActivity"
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +16,6 @@
         android:textStyle="bold"
         android:padding="10dp"
         android:textColor="@color/colorPrimaryDark"/>
-
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -107,5 +105,22 @@
             </android.support.v7.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:clipToPadding="false">
+    </HorizontalScrollView>
 </LinearLayout>
