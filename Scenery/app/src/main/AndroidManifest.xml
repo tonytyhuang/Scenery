@@ -19,8 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.forrestfan.harbourfront.Harbourfront" />
-        <activity android:name=".Harbourfront"></activity>
+        <activity
+            android:name=".Harbourfront"
+            android:label="Harbourfront Toronto">
+        </activity>
+        <activity
+            android:name=".Review"
+            android:label="Review Location">
+        </activity>
     </application>
 
 </manifest>

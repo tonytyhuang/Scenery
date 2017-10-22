@@ -39,17 +39,17 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/harbourfront_centre"
+                    android:src="@drawable/harbourfront_centre_dark"
                     android:adjustViewBounds="true"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="HarbourFront Toronto"
+                    android:text="Harbourfront Toronto"
                     android:textColor="#fff"
                     android:textSize="18dp"
                     android:padding="6dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_gravity="bottom"/>
+                    android:layout_gravity="center"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -65,7 +65,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/toronto_islands"
+                    android:src="@drawable/toronto_islands_dark"
                     android:adjustViewBounds="true"/>
                 <TextView
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                     android:textSize="18dp"
                     android:padding="6dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_gravity="bottom"/>
+                    android:layout_gravity="center"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -91,7 +91,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/casa_loma"
+                    android:src="@drawable/casa_loma_dark"
                     android:adjustViewBounds="true"/>
                 <TextView
                     android:layout_width="match_parent"
@@ -101,14 +101,14 @@
                     android:textSize="18dp"
                     android:padding="6dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_gravity="bottom"/>
+                    android:layout_gravity="center"/>
             </android.support.v7.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Favorites"
+        android:text="Favourites"
         android:textSize="28dp"
         android:textStyle="bold"
         android:padding="10dp"
@@ -122,5 +122,84 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:clipToPadding="false">
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                android:id="@+id/GraffitiAlley"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="2dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/graffiti_alley_dark"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Graffiti Alley"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                android:id="@+id/EdwardsGardens"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="2dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/edwards_gardens_dark"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edwards Gardens"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                android:id="@+id/UnionStation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="2dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/union_station_dark"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Union Station"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
     </HorizontalScrollView>
 </LinearLayout>
