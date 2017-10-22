@@ -48,21 +48,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    @Override
-    public boolean onCreateOptionsMenu (Menu menu) {
-        MenuInflater menuinflater = getMenuInflater();
-        menuinflater.inflate(R.menu.main_activity_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected (MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.search:
-                Intent intent = new Intent (MainActivity.this, Search.class);
-                startActivity(intent);
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

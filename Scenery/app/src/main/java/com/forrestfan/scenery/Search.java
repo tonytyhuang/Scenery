@@ -3,6 +3,7 @@ package com.forrestfan.scenery;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -14,6 +15,7 @@ public class Search extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Button search = (Button) findViewById(R.id.btnSearch);
         search.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +45,7 @@ public class Search extends AppCompatActivity {
 
                     @Override
                     public void onStopTrackingTouch(SeekBar seekBar) {
-                        distance.setText(distanceProgress + "km");
+                        distance.setText(distanceProgress + "km ");
                     }
                 }
             );
@@ -74,4 +76,14 @@ public class Search extends AppCompatActivity {
         }
 
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
