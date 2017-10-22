@@ -33,7 +33,7 @@ public class Search extends AppCompatActivity {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                         distanceProgress = (progress + 1) * 5;
-                        distance.setText(distanceProgress + "/5");
+                        distance.setText(distanceProgress + "km");
                     }
 
                     @Override
@@ -43,7 +43,7 @@ public class Search extends AppCompatActivity {
 
                     @Override
                     public void onStopTrackingTouch(SeekBar seekBar) {
-                        distance.setText(distanceProgress + "/5");
+                        distance.setText(distanceProgress + "km");
                     }
                 }
             );
