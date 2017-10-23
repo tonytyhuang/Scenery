@@ -1,5 +1,8 @@
 # scenery
 App to help photographers find and share locations with fellow photographers
+
+Made for THacks 2
+
 To run this app, make sure you aready have Android Studio, JDK.
 Android Studio: https://developer.android.com/studio/index.html
 JDK: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
